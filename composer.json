@@ -13,7 +13,11 @@
         "magento/module-config": ">=100"
     },
     "require-dev": {
-        "mikey179/vfsstream": "^1.6"
+        "mikey179/vfsstream": "^1.6",
+        "magento/magento-coding-standard": "^41",
+        "phpstan/phpstan": "^2.1",
+        "bitexpert/phpstan-magento": "^0.44",
+        "phpstan/extension-installer": "^1.4"
     },
     "license": [
         "OSL-3.0",
@@ -25,6 +29,12 @@
         ],
         "psr-4": {
             "Firegento\\ContentProvisioning\\": ""
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
         }
     }
 }
